@@ -8,7 +8,7 @@ import com.lanwan.user.dao.UserDao;
 import com.lanwan.user.model.User;
 import com.lanwan.user.service.UserService;
 
-@Service
+@Service(value = "userService")
 @Transactional
 public class UserServiceImpl implements UserService {
 	
