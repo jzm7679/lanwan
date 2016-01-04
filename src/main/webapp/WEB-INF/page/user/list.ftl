@@ -98,7 +98,7 @@
 								
 								<div class="row" style="padding-bottom: 15px;">
 									<div class="col-xs-12">
-										<button type="button" class="btn btn-xs btn-info">新增员工</button>
+										<a href="${base}/user/add" class="btn btn-xs btn-info">新增员工</a>
 									</div>
 								</div>
 								
