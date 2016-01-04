@@ -8,12 +8,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.lanwan.common.controller.BaseController;
 import com.lanwan.user.model.User;
 import com.lanwan.user.service.UserService;
 
 @Controller
 @RequestMapping(value = "/user")
-public class UserController {
+public class UserController extends BaseController{
 	
 	@Autowired
 	private UserService userService;
@@ -27,7 +28,7 @@ public class UserController {
 		
 		ModelAndView mav = new ModelAndView();
 		mav.addObject("username", "lanwan");
-		mav.setViewName("user/list");
+		mav.setViewName("/user/list");
 		return mav;
 	}
 
