@@ -1,42 +1,80 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 	<head>
-    	<meta charset="utf-8">
-    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    	<meta name="viewport" content="width=device-width, initial-scale=1">
-    	<title>lanwan</title>
-    	<link rel="stylesheet" href="${base}/plugins/bs3/css/bootstrap.min.css">
-    	<script src="${base}/plugins/jquery/jquery-2.1.1.min.js"></script>
-    	<script src="${base}/plugins/bs3/js/bootstrap.min.js"></script>
-  	</head>
-  	<body>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<table class="table table-striped table-condensed table-hover">
-						<thead>
-							<tr>
-								<th>#</th>
-								<th>用户名</th>
-								<th>手机号</th>
-								<th>性别</th>
-								<th>年龄</th>
-							</tr>
-						</thead>
-						<tbody>
-							<#list 1..5 as i>
-							<tr>
-								<th scope="row">${i}</th>
-								<td>lw${i}</td>
-								<td>1850251502${i}</td>
-								<td><#if i%2 == 0>男<#else>女</#if></td>
-								<td>2${i}</td>
-							</tr>
-							</#list>
-						</tbody>
-					</table>
-				</div>
-			</div>
-		</div>
+		<meta charset="utf-8" />
+		<title>员工设置</title>
+		<meta name="keywords" content="lanwan" />
+		<meta name="description" content="lanwan" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- 头部, 存放公用样式 -->
+		<#include "../global/head.ftl">
+	</head>
+
+	<body>
+		<!-- 顶部 -->
+		<#include "../global/top.ftl">
+		
+		<div class="main-container" id="main-container">
+			<script type="text/javascript">
+				try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+			</script>
+
+			<div class="main-container-inner">
+				<!-- 左侧菜单 -->
+				<#include "../global/menu.ftl">
+				
+				<div class="main-content">
+					<div class="breadcrumbs" id="breadcrumbs">
+						<script type="text/javascript">
+							try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+						</script>
+
+						<ul class="breadcrumb">
+							<li>
+								<i class="icon-home home-icon"></i>
+								<a href="#">首页</a>
+							</li>
+							<li class="">
+								基础设置
+							</li>
+							<li class="active">
+								员工设置
+							</li>
+							
+						</ul><!-- .breadcrumb -->
+					</div>
+	
+					<!-- 以下为正文内容 -->
+					<div class="page-content">
+						<div class="page-header">
+							<h1>
+								员工设置
+								<small>
+									设置员工基本信息		 
+								</small>
+							</h1>
+						</div><!-- /.page-header -->
+						<div class="row">
+							<div class="col-xs-12">
+								<!-- PAGE CONTENT BEGINS -->
+								<div class="row">
+									
+									
+									
+								</div>
+								<!-- PAGE CONTENT ENDS -->
+							</div><!-- /.col -->
+						</div><!-- /.row -->
+					</div><!-- /.page-content -->
+					
+				</div><!-- /.main-content -->
+			</div><!-- /.main-container-inner -->
+
+		</div><!-- /.main-container -->
+
+		<!-- 底部,存放公用JS -->
+		<#include "../global/foot.ftl">
+		
 	</body>
 </html>
+
