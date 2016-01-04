@@ -25,21 +25,12 @@
 			</button>
 		</div>
 
-		<div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
-			<span class="btn btn-success"></span>
-
-			<span class="btn btn-info"></span>
-
-			<span class="btn btn-warning"></span>
-
-			<span class="btn btn-danger"></span>
-		</div>
 	</div><!-- #sidebar-shortcuts -->
 
 	
 	<ul class="nav nav-list">
 		<li class="active">
-			<a href="#">
+			<a href="${base}/index">
 				<i class="icon-dashboard"></i>
 				<span class="menu-text"> 控制台 </span>
 			</a>
